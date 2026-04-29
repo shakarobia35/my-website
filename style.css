@@ -9,7 +9,12 @@ body {
     min-height: 1500px;
     transition: background-color 0.5s ease;
 }
-
+.layout-lock {
+    width: 1240px;
+    margin: 0 auto;
+    overflow-x: auto;
+    background: inherit;
+}
 .content {
     padding: 2rem;
     font-family: system-ui;
@@ -50,6 +55,7 @@ section {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    overflow-x: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,9 +95,10 @@ section img {
 
 #text {
     position: relative;
+    flex-wrap: nowrap;
     z-index: 1;
     color: #f2f8f7f7;
-    font-size: 6vw;
+    font-size: 4vw;
 }
 
 #road {
